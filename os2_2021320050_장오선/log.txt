@@ -1,0 +1,866 @@
+﻿[    0.000000] Linux version 4.20.11.oslab (root@oslyx-VirtualBox) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #2 SMP Mon Dec 12 16:00:14 KST 2022
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.20.11.oslab root=UUID=d14070b5-4efc-4e5c-9714-4b5b549f52b7 ro quiet splash
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Hygon HygonGenuine
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000dffeffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000dfff0000-0x00000000dfffffff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000011fffffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] SMBIOS 2.5 present.
+[    0.000000] DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[    0.000000] Hypervisor detected: KVM
+[    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[    0.000000] kvm-clock: cpu 0, msr 8b601001, primary cpu clock
+[    0.000001] kvm-clock: using sched offset of 20407267318 cycles
+[    0.000003] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[    0.000005] tsc: Detected 2208.002 MHz processor
+[    0.013857] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.013860] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.013866] last_pfn = 0x120000 max_arch_pfn = 0x400000000
+[    0.013967] MTRR default type: uncachable
+[    0.013967] MTRR variable ranges disabled:
+[    0.013989] Disabled
+[    0.013991] x86/PAT: MTRRs disabled, skipping PAT initialization too.
+[    0.014012] CPU MTRRs all blank - virtualized system.
+[    0.014035] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+[    0.014058] last_pfn = 0xdfff0 max_arch_pfn = 0x400000000
+[    0.014126] found SMP MP-table at [mem 0x0009fff0-0x0009ffff] mapped at [(____ptrval____)]
+[    1.337985] check: Scanning 1 areas for low memory corruption
+[    1.337989] Base memory trampoline at [(____ptrval____)] 99000 size 24576
+[    1.338171] BRK [0x8b801000, 0x8b801fff] PGTABLE
+[    1.338174] BRK [0x8b802000, 0x8b802fff] PGTABLE
+[    1.338175] BRK [0x8b803000, 0x8b803fff] PGTABLE
+[    1.338214] BRK [0x8b804000, 0x8b804fff] PGTABLE
+[    1.338216] BRK [0x8b805000, 0x8b805fff] PGTABLE
+[    1.338570] RAMDISK: [mem 0x308a1000-0x34447fff]
+[    1.338644] ACPI: Early table checksum verification disabled
+[    1.338681] ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
+[    1.338685] ACPI: XSDT 0x00000000DFFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+[    1.338692] ACPI: FACP 0x00000000DFFF00F0 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+[    1.338699] ACPI: DSDT 0x00000000DFFF0480 002325 (v02 VBOX   VBOXBIOS 00000002 INTL 20100528)
+[    1.338703] ACPI: FACS 0x00000000DFFF0200 000040
+[    1.338706] ACPI: FACS 0x00000000DFFF0200 000040
+[    1.338709] ACPI: APIC 0x00000000DFFF0240 00006C (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+[    1.338713] ACPI: SSDT 0x00000000DFFF02B0 0001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+[    1.338722] ACPI: Local APIC address 0xfee00000
+[    1.341629] No NUMA configuration found
+[    1.341632] Faking a node at [mem 0x0000000000000000-0x000000011fffffff]
+[    1.341639] NODE_DATA(0) allocated [mem 0x11ffd1000-0x11fffbfff]
+[    1.341895] Zone ranges:
+[    1.341896]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    1.341897]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    1.341898]   Normal   [mem 0x0000000100000000-0x000000011fffffff]
+[    1.341899]   Device   empty
+[    1.341900] Movable zone start for each node
+[    1.341903] Early memory node ranges
+[    1.341903]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    1.341904]   node   0: [mem 0x0000000000100000-0x00000000dffeffff]
+[    1.341905]   node   0: [mem 0x0000000100000000-0x000000011fffffff]
+[    1.341962] Zeroed struct page in unavailable ranges: 114 pages
+[    1.341964] Initmem setup node 0 [mem 0x0000000000001000-0x000000011fffffff]
+[    1.341965] On node 0 totalpages: 1048462
+[    1.341966]   DMA zone: 64 pages used for memmap
+[    1.341967]   DMA zone: 21 pages reserved
+[    1.341968]   DMA zone: 3998 pages, LIFO batch:0
+[    1.342053]   DMA32 zone: 14272 pages used for memmap
+[    1.342053]   DMA32 zone: 913392 pages, LIFO batch:63
+[    1.369050]   Normal zone: 2048 pages used for memmap
+[    1.369056]   Normal zone: 131072 pages, LIFO batch:31
+[    1.380064] ACPI: PM-Timer IO Port: 0x4008
+[    1.380067] ACPI: Local APIC address 0xfee00000
+[    1.380489] IOAPIC[0]: apic_id 4, version 32, address 0xfec00000, GSI 0-23
+[    1.380493] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    1.380495] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+[    1.380497] ACPI: IRQ0 used by override.
+[    1.380498] ACPI: IRQ9 used by override.
+[    1.380500] Using ACPI (MADT) for SMP configuration information
+[    1.380534] smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+[    1.380623] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    1.380625] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[    1.380625] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[    1.380626] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[    1.380627] PM: Registered nosave memory: [mem 0xdfff0000-0xdfffffff]
+[    1.380628] PM: Registered nosave memory: [mem 0xe0000000-0xfebfffff]
+[    1.380628] PM: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+[    1.380629] PM: Registered nosave memory: [mem 0xfec01000-0xfedfffff]
+[    1.380630] PM: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+[    1.380630] PM: Registered nosave memory: [mem 0xfee01000-0xfffbffff]
+[    1.380631] PM: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+[    1.380633] [mem 0xe0000000-0xfebfffff] available for PCI devices
+[    1.380633] Booting paravirtualized kernel on KVM
+[    1.380636] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    1.380645] random: get_random_bytes called from start_kernel+0x97/0x526 with crng_init=0
+[    1.380649] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:1
+[    1.380791] percpu: Embedded 46 pages/cpu @(____ptrval____) s151552 r8192 d28672 u524288
+[    1.380795] pcpu-alloc: s151552 r8192 d28672 u524288 alloc=1*2097152
+[    1.380797] pcpu-alloc: [0] 0 1 2 3 
+[    1.380877] PV qspinlock hash table entries: 256 (order: 0, 4096 bytes)
+[    1.380896] Built 1 zonelists, mobility grouping on.  Total pages: 1032057
+[    1.380897] Policy zone: Normal
+[    1.380898] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.20.11.oslab root=UUID=d14070b5-4efc-4e5c-9714-4b5b549f52b7 ro quiet splash
+[    1.386441] Calgary: detecting Calgary via BIOS EBDA area
+[    1.386444] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[    1.397790] Memory: 3967212K/4193848K available (14341K kernel code, 2318K rwdata, 4152K rodata, 2460K init, 5336K bss, 226636K reserved, 0K cma-reserved)
+[    1.397937] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    1.397948] Kernel/User page tables isolation: enabled
+[    1.397971] ftrace: allocating 41122 entries in 161 pages
+[    1.431499] rcu: Hierarchical RCU implementation.
+[    1.431501] rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=4.
+[    1.431502]         Tasks RCU enabled.
+[    1.431503] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    1.431503] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    1.436222] NR_IRQS: 524544, nr_irqs: 456, preallocated irqs: 16
+[    1.553275] Console: colour VGA+ 80x25
+[    1.553301] printk: console [tty0] enabled
+[    1.553378] ACPI: Core revision 20181003
+[    1.553980] APIC: Switch to symmetric I/O mode setup
+[    1.557331] x2apic enabled
+[    1.560571] Switched APIC routing to physical x2apic.
+[    1.575365] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    1.575778] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x1fd3ba1610f, max_idle_ns: 440795284337 ns
+[    1.575796] Calibrating delay loop (skipped) preset value.. 4416.00 BogoMIPS (lpj=8832008)
+[    1.575799] pid_max: default: 32768 minimum: 301
+[    1.575842] LSM: Security Framework initializing
+[    1.575844] Yama: becoming mindful.
+[    1.575864] AppArmor: AppArmor initialized
+[    1.576447] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[    1.576798] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    1.576817] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    1.576825] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    1.578018] mce: CPU supports 0 MCE banks
+[    1.578162] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+[    1.578163] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+[    1.578164] Spectre V2 : Mitigation: Full generic retpoline
+[    1.578165] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    1.578166] Speculative Store Bypass: Vulnerable
+[    1.578323] Freeing SMP alternatives memory: 36K
+[    1.583780] smpboot: CPU0: Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz (family: 0x6, model: 0x9e, stepping: 0xa)
+[    1.583780] Performance Events: unsupported p6 CPU model 158 no PMU driver, software events only.
+[    1.583780] rcu: Hierarchical SRCU implementation.
+[    1.583780] NMI watchdog: Perf NMI watchdog permanently disabled
+[    1.583780] smp: Bringing up secondary CPUs ...
+[    1.583780] x86: Booting SMP configuration:
+[    1.583780] .... node  #0, CPUs:      #1
+[    0.126793] kvm-clock: cpu 1, msr 8b601041, secondary cpu clock
+[    0.126793] mce: CPU supports 0 MCE banks
+[    1.586170]  #2
+[    0.126793] kvm-clock: cpu 2, msr 8b601081, secondary cpu clock
+[    0.126793] mce: CPU supports 0 MCE banks
+[    1.591856]  #3
+[    0.126793] kvm-clock: cpu 3, msr 8b6010c1, secondary cpu clock
+[    0.126793] mce: CPU supports 0 MCE banks
+[    1.597954] smp: Brought up 1 node, 4 CPUs
+[    1.597954] smpboot: Max logical packages: 1
+[    1.597954] smpboot: Total of 4 processors activated (17664.01 BogoMIPS)
+[    1.600069] devtmpfs: initialized
+[    1.600069] x86/mm: Memory block size: 128MB
+[    1.600794] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    1.600794] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    1.600794] pinctrl core: initialized pinctrl subsystem
+[    1.600988] RTC time:  7:49:12, date: 12/12/22
+[    1.604346] NET: Registered protocol family 16
+[    1.604428] audit: initializing netlink subsys (disabled)
+[    1.604477] cpuidle: using governor ladder
+[    1.604477] cpuidle: using governor menu
+[    1.604477] audit: type=2000 audit(1670831376.548:1): state=initialized audit_enabled=0 res=1
+[    1.604477] ACPI: bus type PCI registered
+[    1.604477] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    1.604676] PCI: Using configuration type 1 for base access
+[    1.608050] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    1.608244] ACPI: Added _OSI(Module Device)
+[    1.608244] ACPI: Added _OSI(Processor Device)
+[    1.608244] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    1.608244] ACPI: Added _OSI(Processor Aggregator Device)
+[    1.608244] ACPI: Added _OSI(Linux-Dell-Video)
+[    1.608244] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    1.615832] ACPI: 2 ACPI AML tables successfully acquired and loaded
+[    1.623376] ACPI: Interpreter enabled
+[    1.623396] ACPI: (supports S0 S5)
+[    1.623400] ACPI: Using IOAPIC for interrupt routing
+[    1.624166] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    1.624912] ACPI: Enabled 2 GPEs in block 00 to 07
+[    1.651169] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    1.651174] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+[    1.653101] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+[    1.653113] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[    1.656301] PCI host bridge to bus 0000:00
+[    1.656305] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    1.656306] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    1.656307] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    1.656308] pci_bus 0000:00: root bus resource [mem 0xe0000000-0xfdffffff window]
+[    1.656310] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    1.657055] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+[    1.673076] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+[    1.687090] pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a
+[    1.694698] pci 0000:00:01.1: reg 0x20: [io  0xd000-0xd00f]
+[    1.697505] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    1.697506] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    1.697507] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    1.697508] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    1.707780] pci 0000:00:02.0: [15ad:0405] type 00 class 0x030000
+[    1.713181] pci 0000:00:02.0: reg 0x10: [io  0xd010-0xd01f]
+[    1.717302] pci 0000:00:02.0: reg 0x14: [mem 0xe0000000-0xe0ffffff pref]
+[    1.721403] pci 0000:00:02.0: reg 0x18: [mem 0xf0000000-0xf01fffff]
+[    1.756063] pci 0000:00:03.0: [8086:100e] type 00 class 0x020000
+[    1.764176] pci 0000:00:03.0: reg 0x10: [mem 0xf0200000-0xf021ffff]
+[    1.772557] pci 0000:00:03.0: reg 0x18: [io  0xd020-0xd027]
+[    1.807780] pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000
+[    1.812673] pci 0000:00:04.0: reg 0x10: [io  0xd040-0xd05f]
+[    1.816736] pci 0000:00:04.0: reg 0x14: [mem 0xf0400000-0xf07fffff]
+[    1.824160] pci 0000:00:04.0: reg 0x18: [mem 0xf0800000-0xf0803fff pref]
+[    1.858464] pci 0000:00:05.0: [8086:2415] type 00 class 0x040100
+[    1.860766] pci 0000:00:05.0: reg 0x10: [io  0xd100-0xd1ff]
+[    1.861735] pci 0000:00:05.0: reg 0x14: [io  0xd200-0xd23f]
+[    1.874831] pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310
+[    1.880724] pci 0000:00:06.0: reg 0x10: [mem 0xf0804000-0xf0804fff]
+[    1.922537] pci 0000:00:07.0: [8086:7113] type 00 class 0x068000
+[    1.929329] pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+[    1.929464] pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+[    1.960492] pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601
+[    1.968086] pci 0000:00:0d.0: reg 0x10: [io  0xd240-0xd247]
+[    1.972196] pci 0000:00:0d.0: reg 0x14: [io  0xd248-0xd24b]
+[    1.976603] pci 0000:00:0d.0: reg 0x18: [io  0xd250-0xd257]
+[    1.980634] pci 0000:00:0d.0: reg 0x1c: [io  0xd258-0xd25b]
+[    1.988171] pci 0000:00:0d.0: reg 0x20: [io  0xd260-0xd26f]
+[    1.992513] pci 0000:00:0d.0: reg 0x24: [mem 0xf0806000-0xf0807fff]
+[    2.102382] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+[    2.103837] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 *10 11)
+[    2.104722] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 *9 10 11)
+[    2.105336] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 10 *11)
+[    2.107937] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    2.107939] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    2.107942] pci 0000:00:02.0: vgaarb: bridge control possible
+[    2.107942] vgaarb: loaded
+[    2.108512] SCSI subsystem initialized
+[    2.108629] libata version 3.00 loaded.
+[    2.108629] ACPI: bus type USB registered
+[    2.108629] usbcore: registered new interface driver usbfs
+[    2.108629] usbcore: registered new interface driver hub
+[    2.108629] usbcore: registered new device driver usb
+[    2.108629] pps_core: LinuxPPS API ver. 1 registered
+[    2.108629] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    2.108629] PTP clock support registered
+[    2.108629] EDAC MC: Ver: 3.0.0
+[    2.113823] PCI: Using ACPI for IRQ routing
+[    2.113823] PCI: pci_cache_line_size set to 64 bytes
+[    2.117494] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+[    2.117534] e820: reserve RAM buffer [mem 0xdfff0000-0xdfffffff]
+[    2.118036] NetLabel: Initializing
+[    2.118037] NetLabel:  domain hash size = 128
+[    2.118038] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    2.118061] NetLabel:  unlabeled traffic allowed by default
+[    2.121455] clocksource: Switched to clocksource kvm-clock
+[    2.137887] VFS: Disk quotas dquot_6.6.0
+[    2.137904] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    2.138124] AppArmor: AppArmor Filesystem Enabled
+[    2.138189] pnp: PnP ACPI init
+[    2.138265] pnp 00:00: Plug and Play ACPI device, IDs PNP0303 (active)
+[    2.138584] pnp 00:01: Plug and Play ACPI device, IDs PNP0f03 (active)
+[    2.143448] pnp: PnP ACPI: found 2 devices
+[    2.181004] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    2.181015] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    2.181016] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    2.181018] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    2.181019] pci_bus 0000:00: resource 7 [mem 0xe0000000-0xfdffffff window]
+[    2.181174] NET: Registered protocol family 2
+[    2.181500] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes)
+[    2.181517] TCP established hash table entries: 32768 (order: 6, 262144 bytes)
+[    2.181569] TCP bind hash table entries: 32768 (order: 7, 524288 bytes)
+[    2.181635] TCP: Hash tables configured (established 32768 bind 32768)
+[    2.181696] UDP hash table entries: 2048 (order: 4, 65536 bytes)
+[    2.181706] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes)
+[    2.181759] NET: Registered protocol family 1
+[    2.181795] NET: Registered protocol family 44
+[    2.181988] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    2.182182] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[    2.182885] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    2.188743] PCI: CLS 0 bytes, default 64
+[    2.188809] Unpacking initramfs...
+[    2.992808] Freeing initrd memory: 61084K
+[    2.992952] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    2.992955] software IO TLB: mapped [mem 0xdbff0000-0xdfff0000] (64MB)
+[    2.993129] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1fd3ba1610f, max_idle_ns: 440795284337 ns
+[    2.993163] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    2.993223] check: Scanning for low memory corruption every 60 seconds
+[    2.997769] Initialise system trusted keyrings
+[    2.997777] Key type blacklist registered
+[    2.998394] workingset: timestamp_bits=36 max_order=20 bucket_order=0
+[    3.000744] zbud: loaded
+[    3.002371] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    3.003697] fuse init (API version 7.28)
+[    3.128150] Key type asymmetric registered
+[    3.128152] Asymmetric key parser 'x509' registered
+[    3.128170] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+[    3.128816] io scheduler noop registered
+[    3.128817] io scheduler deadline registered
+[    3.128860] io scheduler cfq registered (default)
+[    3.130059] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    3.130156] intel_idle: Please enable MWAIT in BIOS SETUP
+[    3.130557] ACPI: AC Adapter [AC] (on-line)
+[    3.130613] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    3.130627] ACPI: Power Button [PWRF]
+[    3.131157] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+[    3.131162] ACPI: Sleep Button [SLPF]
+[    3.132695] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    3.137749] battery: ACPI: Battery Slot [BAT0] (battery present)
+[    3.150668] Linux agpgart interface v0.103
+[    3.157724] loop: module loaded
+[    3.157877] ata_piix 0000:00:01.1: version 2.13
+[    3.162045] scsi host0: ata_piix
+[    3.163032] scsi host1: ata_piix
+[    3.163170] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+[    3.163172] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+[    3.163308] libphy: Fixed MDIO Bus: probed
+[    3.163309] tun: Universal TUN/TAP device driver, 1.6
+[    3.163705] PPP generic driver version 2.4.2
+[    3.164285] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    3.164290] ehci-pci: EHCI PCI platform driver
+[    3.164304] ehci-platform: EHCI generic platform driver
+[    3.164311] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    3.164314] ohci-pci: OHCI PCI platform driver
+[    3.168246] ohci-pci 0000:00:06.0: OHCI PCI host controller
+[    3.168259] ohci-pci 0000:00:06.0: new USB bus registered, assigned bus number 1
+[    3.169210] ohci-pci 0000:00:06.0: irq 22, io mem 0xf0804000
+[    3.230498] usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 4.20
+[    3.230500] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    3.230501] usb usb1: Product: OHCI PCI host controller
+[    3.230502] usb usb1: Manufacturer: Linux 4.20.11.oslab ohci_hcd
+[    3.230503] usb usb1: SerialNumber: 0000:00:06.0
+[    3.231067] hub 1-0:1.0: USB hub found
+[    3.231132] hub 1-0:1.0: 12 ports detected
+[    3.233147] ohci-platform: OHCI generic platform driver
+[    3.233157] uhci_hcd: USB Universal Host Controller Interface driver
+[    3.233199] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+[    3.238135] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    3.238193] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    3.238953] mousedev: PS/2 mouse device common for all mice
+[    3.245009] rtc_cmos rtc_cmos: registered as rtc0
+[    3.245132] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+[    3.245222] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+[    3.245526] i2c /dev entries driver
+[    3.246265] device-mapper: uevent: version 1.0.3
+[    3.246357] device-mapper: ioctl: 4.39.0-ioctl (2018-04-03) initialised: dm-devel@redhat.com
+[    3.247496] ledtrig-cpu: registered to indicate activity on CPUs
+[    3.247731] NET: Registered protocol family 10
+[    3.265001] Segment Routing with IPv6
+[    3.265022] NET: Registered protocol family 17
+[    3.265660] Key type dns_resolver registered
+[    3.266988] RAS: Correctable Errors collector initialized.
+[    3.267034] sched_clock: Marking stable (3144136946, 122793792)->(3380097953, -113167215)
+[    3.271719] registered taskstats version 1
+[    3.271727] Loading compiled-in X.509 certificates
+[    3.275079] Loaded X.509 cert 'Build time autogenerated kernel key: 806264b3f30bafc402055b7e7955b08e39f1c14e'
+[    3.275098] zswap: loaded using pool lzo/zbud
+[    3.293631] Key type big_key registered
+[    3.293637] Key type trusted registered
+[    3.300449] Key type encrypted registered
+[    3.300454] AppArmor: AppArmor sha1 policy hashing enabled
+[    3.300498] ima: No TPM chip found, activating TPM-bypass!
+[    3.300503] ima: Allocated hash algorithm: sha1
+[    3.300518] evm: Initialising EVM extended attributes:
+[    3.300519] evm: security.selinux
+[    3.300519] evm: security.SMACK64
+[    3.300520] evm: security.SMACK64EXEC
+[    3.300520] evm: security.SMACK64TRANSMUTE
+[    3.300521] evm: security.SMACK64MMAP
+[    3.300521] evm: security.apparmor
+[    3.300522] evm: security.ima
+[    3.300522] evm: security.capability
+[    3.300523] evm: HMAC attrs: 0x1
+[    3.300898]   Magic number: 2:467:824
+[    3.302106] rtc_cmos rtc_cmos: setting system clock to 2022-12-12 07:49:13 UTC (1670831353)
+[    3.587026] ata2.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+[    3.591150] ata1.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+[    3.599579] scsi 0:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+[    3.604184] sr 0:0:0:0: [sr0] scsi3-mmc drive: 32x/32x xa/form2 tray
+[    3.604188] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    3.604780] sr 0:0:0:0: Attached scsi CD-ROM sr0
+[    3.605170] sr 0:0:0:0: Attached scsi generic sg0 type 5
+[    3.607454] scsi 1:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+[    3.611470] sr 1:0:0:0: [sr1] scsi3-mmc drive: 32x/32x xa/form2 tray
+[    3.611581] sr 1:0:0:0: Attached scsi CD-ROM sr1
+[    3.611716] sr 1:0:0:0: Attached scsi generic sg1 type 5
+[    3.614979] Freeing unused decrypted memory: 2040K
+[    3.616047] Freeing unused kernel image memory: 2460K
+[    3.884278] Write protecting the kernel read-only data: 22528k
+[    3.888252] Freeing unused kernel image memory: 2012K
+[    3.890219] Freeing unused kernel image memory: 1992K
+[    3.900722] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    3.900725] x86/mm: Checking user space page tables
+[    3.915272] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    3.915276] Run /init as init process
+[    4.007079] ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+[    4.007146] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input4
+[    4.009670] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[    4.009670] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    4.021316] piix4_smbus 0000:00:07.0: SMBus Host Controller at 0x4100, revision 0
+[    4.025375] ahci 0000:00:0d.0: version 3.0
+[    4.034288] ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+[    4.036617] ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+[    4.036619] ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+[    4.040082] scsi host2: ahci
+[    4.040281] ata3: SATA max UDMA/133 abar m8192@0xf0806000 port 0xf0806100 irq 21
+[    4.084831] [drm] DMA map mode: Using physical TTM page addresses.
+[    4.085650] [drm] Capabilities:
+[    4.085650] [drm]   Cursor.
+[    4.085651] [drm]   Cursor bypass 2.
+[    4.085651] [drm]   Alpha cursor.
+[    4.085652] [drm]   3D.
+[    4.085652] [drm]   Extended Fifo.
+[    4.085652] [drm]   Pitchlock.
+[    4.085653] [drm]   Irq mask.
+[    4.085653] [drm]   GMR.
+[    4.085653] [drm]   Traces.
+[    4.085654] [drm]   GMR2.
+[    4.085654] [drm]   Screen Object 2.
+[    4.085656] [drm] Max GMR ids is 8192
+[    4.085657] [drm] Max number of GMR pages is 1048576
+[    4.085657] [drm] Max dedicated hypervisor surface memory is 507904 kiB
+[    4.085658] [drm] Maximum display memory size is 16384 kiB
+[    4.085659] [drm] VRAM at 0xe0000000 size is 16384 kiB
+[    4.085659] [drm] MMIO at 0xf0000000 size is 2048 kiB
+[    4.085660] [drm] global init.
+[    4.085716] [TTM] Zone  kernel: Available graphics memory: 2018418 kiB
+[    4.085717] [TTM] Initializing pool allocator
+[    4.085720] [TTM] Initializing DMA pool allocator
+[    4.086243] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    4.086244] [drm] No driver support for vblank timestamp query.
+[    4.087487] [drm] Screen Objects Display Unit initialized
+[    4.088900] [drm] width 720
+[    4.089084] [drm] height 400
+[    4.089275] [drm] bpp 32
+[    4.090332] [drm] Fifo max 0x00200000 min 0x00001000 cap 0x00000355
+[    4.091023] [drm] DX: no.
+[    4.091023] [drm] Atomic: yes.
+[    4.091024] [drm] SM4_1: no.
+[    4.091072] [drm:vmw_host_log [vmwgfx]] *ERROR* Failed to send host log message.
+[    4.108915] [drm:vmw_host_log [vmwgfx]] *ERROR* Failed to send host log message.
+[    4.123297] usb 1-1: new full-speed USB device number 2 using ohci-pci
+[    4.129793] fbcon: svgadrmfb (fb0) is primary device
+[    4.135866] Console: switching to colour frame buffer device 100x37
+[    4.147136] [drm] Initialized vmwgfx 2.15.0 20180704 for 0000:00:02.0 on minor 0
+[    4.301257] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input5
+[    4.356967] ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[    4.357613] ata3.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+[    4.357615] ata3.00: 83886080 sectors, multi 128: LBA48 NCQ (depth 32)
+[    4.358623] ata3.00: configured for UDMA/133
+[    4.358889] scsi 2:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+[    4.359181] sd 2:0:0:0: [sda] 83886080 512-byte logical blocks: (42.9 GB/40.0 GiB)
+[    4.359188] sd 2:0:0:0: [sda] Write Protect is off
+[    4.359189] sd 2:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    4.359199] sd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    4.359424] sd 2:0:0:0: Attached scsi generic sg2 type 0
+[    4.367726]  sda: sda1
+[    4.368461] sd 2:0:0:0: [sda] Attached SCSI disk
+[    4.461334] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+[    4.461336] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+[    4.461338] usb 1-1: Product: USB Tablet
+[    4.461339] usb 1-1: Manufacturer: VirtualBox
+[    4.474795] hidraw: raw HID events driver (C) Jiri Kosina
+[    4.491466] usbcore: registered new interface driver usbhid
+[    4.491467] usbhid: USB HID core driver
+[    4.498216] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0001/input/input6
+[    4.499696] hid-generic 0003:80EE:0021.0001: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+[    5.623206] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:a0:bd:34
+[    5.623211] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+[    5.628496] e1000 0000:00:03.0 enp0s3: renamed from eth0
+[    5.707571] random: fast init done
+[    5.735872] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+[    6.248524] systemd[1]: systemd 237 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+[    6.248553] systemd[1]: Detected virtualization oracle.
+[    6.248560] systemd[1]: Detected architecture x86-64.
+[    6.306699] systemd[1]: Set hostname to <oslyx-VirtualBox>.
+[    6.829594] random: systemd: uninitialized urandom read (16 bytes read)
+[    6.829794] systemd[1]: Created slice System Slice.
+[    6.829850] random: systemd: uninitialized urandom read (16 bytes read)
+[    6.829970] systemd[1]: Created slice User and Session Slice.
+[    6.829985] random: systemd: uninitialized urandom read (16 bytes read)
+[    6.829993] systemd[1]: Reached target User and Group Name Lookups.
+[    6.830074] systemd[1]: Listening on Syslog Socket.
+[    6.830136] systemd[1]: Listening on Journal Socket (/dev/log).
+[    6.830183] systemd[1]: Listening on udev Kernel Socket.
+[    6.936234] EXT4-fs (sda1): re-mounted. Opts: errors=remount-ro
+[    7.054038] systemd-journald[379]: Received request to flush runtime journal from PID 1
+[    7.058412] lp: driver loaded but no devices found
+[    7.060255] Adding 1942896k swap on /swapfile.  Priority:-2 extents:6 across:2106736k FS
+[    7.078388] ppdev: user-space parallel port driver
+[    8.537947] random: crng init done
+[    8.537949] random: 7 urandom warning(s) missed due to ratelimiting
+[    8.865629] vboxguest: loading out-of-tree module taints kernel.
+[    8.865755] vboxguest: module verification failed: signature and/or required key missing - tainting kernel
+[    8.902675] vgdrvHeartbeatInit: Setting up heartbeat to trigger every 2000 milliseconds
+[    8.904228] input: Unspecified device as /devices/pci0000:00/0000:00:04.0/input/input7
+[    8.925289] vboxguest: Successfully loaded version 6.1.38 r153438
+[    8.925577] vboxguest: misc device minor 55, IRQ 20, I/O port d040, MMIO at 00000000f0400000 (size 0x400000)
+[    8.925579] vboxguest: Successfully loaded version 6.1.38 r153438 (interface 0x00010004)
+[    9.225789] audit: type=1400 audit(1670831359.420:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-oopslash" pid=562 comm="apparmor_parser"
+[    9.232779] RAPL PMU: API unit is 2^-32 Joules, 5 fixed counters, 10737418240 ms ovfl timer
+[    9.232781] RAPL PMU: hw unit of domain pp0-core 2^-0 Joules
+[    9.232781] RAPL PMU: hw unit of domain package 2^-0 Joules
+[    9.232782] RAPL PMU: hw unit of domain dram 2^-0 Joules
+[    9.232783] RAPL PMU: hw unit of domain pp1-gpu 2^-0 Joules
+[    9.232783] RAPL PMU: hw unit of domain psys 2^-0 Joules
+[    9.277969] audit: type=1400 audit(1670831359.472:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=539 comm="apparmor_parser"
+[    9.278133] audit: type=1400 audit(1670831359.472:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=539 comm="apparmor_parser"
+[    9.278394] audit: type=1400 audit(1670831359.472:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=539 comm="apparmor_parser"
+[    9.429752] audit: type=1400 audit(1670831359.624:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-senddoc" pid=627 comm="apparmor_parser"
+[    9.555044] cryptd: max_cpu_qlen set to 1000
+[    9.633317] AVX2 version of gcm_enc/dec engaged.
+[    9.633318] AES CTR mode by8 optimization enabled
+[    9.665634] audit: type=1400 audit(1670831359.860:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=538 comm="apparmor_parser"
+[    9.672312] audit: type=1400 audit(1670831359.864:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=538 comm="apparmor_parser"
+[    9.673051] audit: type=1400 audit(1670831359.868:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=538 comm="apparmor_parser"
+[    9.673843] audit: type=1400 audit(1670831359.868:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=538 comm="apparmor_parser"
+[    9.711091] audit: type=1400 audit(1670831359.904:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-xpdfimport" pid=640 comm="apparmor_parser"
+[    9.990964] snd_intel8x0 0000:00:05.0: white list rate for 1028:0177 is 48000
+[   15.699964] kauditd_printk_skb: 10 callbacks suppressed
+[   15.699965] audit: type=1400 audit(1670831365.892:22): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince" pid=540 comm="apparmor_parser"
+[   15.700445] audit: type=1400 audit(1670831365.896:23): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince//sanitized_helper" pid=540 comm="apparmor_parser"
+[   15.701538] audit: type=1400 audit(1670831365.896:24): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-previewer" pid=540 comm="apparmor_parser"
+[   15.702142] audit: type=1400 audit(1670831365.896:25): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-previewer//sanitized_helper" pid=540 comm="apparmor_parser"
+[   15.702685] audit: type=1400 audit(1670831365.896:26): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-thumbnailer" pid=540 comm="apparmor_parser"
+[   15.918835] audit: type=1400 audit(1670831366.112:27): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.core.hook.configure" pid=798 comm="apparmor_parser"
+[   16.081139] audit: type=1400 audit(1670831366.276:28): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.gnome-calculator.hook.configure" pid=800 comm="apparmor_parser"
+[   16.418581] audit: type=1400 audit(1670831366.612:29): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.gnome-calculator.gnome-calculator" pid=799 comm="apparmor_parser"
+[   16.490884] audit: type=1400 audit(1670831366.684:30): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.gnome-characters.hook.configure" pid=805 comm="apparmor_parser"
+[   16.561064] audit: type=1400 audit(1670831366.756:31): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.gnome-characters.gnome-characters" pid=803 comm="apparmor_parser"
+[   21.109124] kauditd_printk_skb: 12 callbacks suppressed
+[   21.109126] audit: type=1400 audit(1670831371.304:44): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/snap/core/14399/usr/lib/snapd/snap-confine" pid=871 comm="apparmor_parser"
+[   21.111580] audit: type=1400 audit(1670831371.304:45): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/snap/core/14399/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=871 comm="apparmor_parser"
+[   22.103874] audit: type=1400 audit(1670831372.296:46): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.gnome-logs" pid=875 comm="apparmor_parser"
+[   22.239207] audit: type=1400 audit(1670831372.432:47): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.gnome-calculator" pid=873 comm="apparmor_parser"
+[   22.273248] audit: type=1400 audit(1670831372.468:48): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.gnome-characters" pid=874 comm="apparmor_parser"
+[   22.312153] audit: type=1400 audit(1670831372.508:49): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.core.hook.configure" pid=877 comm="apparmor_parser"
+[   22.604666] audit: type=1400 audit(1670831372.800:50): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.gnome-calculator.hook.configure" pid=879 comm="apparmor_parser"
+[   22.944833] audit: type=1400 audit(1670831373.140:51): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.gnome-calculator.gnome-calculator" pid=878 comm="apparmor_parser"
+[   22.959639] audit: type=1400 audit(1670831373.152:52): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.gnome-characters.gnome-characters" pid=880 comm="apparmor_parser"
+[   23.021515] audit: type=1400 audit(1670831373.216:53): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.gnome-characters.hook.configure" pid=881 comm="apparmor_parser"
+[   25.591388] IPv6: ADDRCONF(NETDEV_UP): enp0s3: link is not ready
+[   25.615180] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[   25.620798] IPv6: ADDRCONF(NETDEV_UP): enp0s3: link is not ready
+[   25.624547] IPv6: ADDRCONF(NETDEV_CHANGE): enp0s3: link becomes ready
+[   26.063395] vboxvideo: loading version 6.1.38 r153438
+[   26.297954] 07:49:36.496098 main     VBoxService 6.1.38 r153438 (verbosity: 0) linux.amd64 (Sep  1 2022 15:42:08) release log
+               07:49:36.496103 main     Log opened 2022-12-12T07:49:36.496082000Z
+[   26.298943] 07:49:36.497078 main     OS Product: Linux
+[   26.299188] 07:49:36.497401 main     OS Release: 4.20.11.oslab
+[   26.299518] 07:49:36.497643 main     OS Version: #2 SMP Mon Dec 12 16:00:14 KST 2022
+[   26.300811] 07:49:36.498936 main     Executable: /opt/VBoxGuestAdditions-6.1.38/sbin/VBoxService
+               07:49:36.498940 main     Process ID: 1230
+               07:49:36.498941 main     Package type: LINUX_64BITS_GENERIC
+[   26.305999] 07:49:36.504240 main     6.1.38 r153438 started. Verbose level = 0
+[   26.310007] 07:49:36.507898 main     vbglR3GuestCtrlDetectPeekGetCancelSupport: Supported (#1)
+[   28.188073] kauditd_printk_skb: 5 callbacks suppressed
+[   28.188075] audit: type=1400 audit(1670831378.384:59): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/snap/core/14399/usr/lib/snapd/snap-confine" pid=1423 comm="apparmor_parser"
+[   28.203846] audit: type=1400 audit(1670831378.400:60): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/snap/core/14399/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1423 comm="apparmor_parser"
+[   31.023790] audit: type=1400 audit(1670831381.222:61): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.gnome-calculator" pid=1429 comm="apparmor_parser"
+[   31.584625] audit: type=1400 audit(1670831381.782:62): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.gnome-logs" pid=1430 comm="apparmor_parser"
+[   31.868864] audit: type=1400 audit(1670831382.062:63): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.gnome-system-monitor" pid=1432 comm="apparmor_parser"
+[   31.916177] audit: type=1400 audit(1670831382.110:64): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.gnome-characters" pid=1431 comm="apparmor_parser"
+[   31.935858] audit: type=1400 audit(1670831382.130:65): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.gnome-calculator.hook.configure" pid=1477 comm="apparmor_parser"
+[   31.936413] audit: type=1400 audit(1670831382.130:66): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.gnome-logs.hook.configure" pid=1479 comm="apparmor_parser"
+[   31.942230] audit: type=1400 audit(1670831382.134:67): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.core" pid=1480 comm="apparmor_parser"
+[   31.942578] audit: type=1400 audit(1670831382.142:68): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.gnome-logs.gnome-logs" pid=1478 comm="apparmor_parser"
+[   36.068508] [drm:vmw_sou_crtc_page_flip [vmwgfx]] *ERROR* Page flip error -16.
+[  125.259813] rfkill: input handler disabled
+[  128.201198] ISO 9660 Extensions: Microsoft Joliet Level 3
+[  128.214266] ISO 9660 Extensions: Microsoft Joliet Level 3
+[  128.216932] ISO 9660 Extensions: RRIP_1991A
+[  128.222000] ISO 9660 Extensions: RRIP_1991A
+[  389.557182] [Pid: 2363], CPUburst: 198748, rt_priority:10
+[  389.654755] [Pid: 2364], CPUburst: 97572564, rt_priority:10
+[  389.754678] [Pid: 2365], CPUburst: 99923223, rt_priority:10
+[  389.854556] [Pid: 2366], CPUburst: 99877258, rt_priority:10
+[  389.954580] [Pid: 2364], CPUburst: 99908761, rt_priority:10
+[  390.054411] [Pid: 2365], CPUburst: 99947728, rt_priority:10
+[  390.154343] [Pid: 2366], CPUburst: 99930896, rt_priority:10
+[  390.254355] [Pid: 2364], CPUburst: 100012118, rt_priority:10
+[  390.354259] [Pid: 2365], CPUburst: 99904472, rt_priority:10
+[  390.454191] [Pid: 2366], CPUburst: 99932624, rt_priority:10
+[  390.554281] [Pid: 2364], CPUburst: 100088392, rt_priority:10
+[  390.654094] [Pid: 2365], CPUburst: 99814762, rt_priority:10
+[  390.754068] [Pid: 2366], CPUburst: 99973190, rt_priority:10
+[  390.853989] [Pid: 2364], CPUburst: 99922498, rt_priority:10
+[  390.953972] [Pid: 2365], CPUburst: 99980998, rt_priority:10
+[  391.053974] [Pid: 2366], CPUburst: 100002747, rt_priority:10
+[  391.153835] [Pid: 2364], CPUburst: 99861483, rt_priority:10
+[  391.253954] [Pid: 2365], CPUburst: 100114815, rt_priority:10
+[  391.354483] [Pid: 2366], CPUburst: 100532345, rt_priority:10
+[  391.453737] [Pid: 2364], CPUburst: 99255166, rt_priority:10
+[  391.553599] [Pid: 2365], CPUburst: 99861585, rt_priority:10
+[  391.653588] [Pid: 2366], CPUburst: 99989209, rt_priority:10
+[  391.753600] [Pid: 2364], CPUburst: 100011424, rt_priority:10
+[  391.853383] [Pid: 2365], CPUburst: 99780865, rt_priority:10
+[  391.953486] [Pid: 2366], CPUburst: 100105155, rt_priority:10
+[  392.053421] [Pid: 2364], CPUburst: 99935566, rt_priority:10
+[  392.153527] [Pid: 2365], CPUburst: 100105635, rt_priority:10
+[  392.253410] [Pid: 2366], CPUburst: 99883623, rt_priority:10
+[  392.353242] [Pid: 2364], CPUburst: 99830279, rt_priority:10
+[  392.453545] [Pid: 2365], CPUburst: 100304186, rt_priority:10
+[  392.553315] [Pid: 2366], CPUburst: 99769030, rt_priority:10
+[  392.652952] [Pid: 2364], CPUburst: 99636221, rt_priority:10
+[  392.753047] [Pid: 2365], CPUburst: 100095657, rt_priority:10
+[  392.853015] [Pid: 2366], CPUburst: 99968404, rt_priority:10
+[  392.952952] [Pid: 2364], CPUburst: 99938063, rt_priority:10
+[  393.052956] [Pid: 2365], CPUburst: 100001997, rt_priority:10
+[  393.152874] [Pid: 2366], CPUburst: 99919449, rt_priority:10
+[  393.252818] [Pid: 2364], CPUburst: 99943350, rt_priority:10
+[  393.352737] [Pid: 2365], CPUburst: 99919867, rt_priority:10
+[  393.396810] [Pid: 2366], CPUburst: 44057044, rt_priority:10
+[  393.452707] [Pid: 2366], CPUburst: 55891387, rt_priority:10
+[  393.552730] [Pid: 2364], CPUburst: 100020752, rt_priority:10
+[  393.652726] [Pid: 2365], CPUburst: 99997077, rt_priority:10
+[  393.752539] [Pid: 2366], CPUburst: 99814158, rt_priority:10
+[  393.852823] [Pid: 2364], CPUburst: 100283034, rt_priority:10
+[  393.952578] [Pid: 2365], CPUburst: 99755878, rt_priority:10
+[  394.052398] [Pid: 2366], CPUburst: 99818437, rt_priority:10
+[  394.152362] [Pid: 2364], CPUburst: 99964482, rt_priority:10
+[  394.252304] [Pid: 2365], CPUburst: 99942659, rt_priority:10
+[  394.352449] [Pid: 2366], CPUburst: 100142402, rt_priority:10
+[  394.452322] [Pid: 2364], CPUburst: 99871184, rt_priority:10
+[  394.552123] [Pid: 2365], CPUburst: 99805346, rt_priority:10
+[  394.652088] [Pid: 2366], CPUburst: 99964731, rt_priority:10
+[  394.752121] [Pid: 2364], CPUburst: 100033390, rt_priority:10
+[  394.852128] [Pid: 2365], CPUburst: 100003483, rt_priority:10
+[  394.951986] [Pid: 2366], CPUburst: 99857428, rt_priority:10
+[  395.051919] [Pid: 2364], CPUburst: 99934708, rt_priority:10
+[  395.151882] [Pid: 2365], CPUburst: 99962147, rt_priority:10
+[  395.251840] [Pid: 2366], CPUburst: 99960278, rt_priority:10
+[  395.351807] [Pid: 2364], CPUburst: 99966582, rt_priority:10
+[  395.451709] [Pid: 2365], CPUburst: 99903307, rt_priority:10
+[  395.551663] [Pid: 2366], CPUburst: 99952328, rt_priority:10
+[  395.651586] [Pid: 2364], CPUburst: 99925020, rt_priority:10
+[  395.751728] [Pid: 2365], CPUburst: 100124056, rt_priority:10
+[  395.851681] [Pid: 2366], CPUburst: 99960953, rt_priority:10
+[  395.951481] [Pid: 2364], CPUburst: 99809775, rt_priority:10
+[  396.051419] [Pid: 2365], CPUburst: 99936815, rt_priority:10
+[  396.151349] [Pid: 2366], CPUburst: 99930683, rt_priority:10
+[  396.251480] [Pid: 2364], CPUburst: 100124103, rt_priority:10
+[  396.351244] [Pid: 2365], CPUburst: 99770244, rt_priority:10
+[  396.451251] [Pid: 2366], CPUburst: 100005387, rt_priority:10
+[  396.551164] [Pid: 2364], CPUburst: 99915086, rt_priority:10
+[  396.651382] [Pid: 2365], CPUburst: 100213387, rt_priority:10
+[  396.751055] [Pid: 2366], CPUburst: 99678553, rt_priority:10
+[  396.851110] [Pid: 2364], CPUburst: 100046209, rt_priority:10
+[  396.951004] [Pid: 2365], CPUburst: 99896336, rt_priority:10
+[  397.051000] [Pid: 2366], CPUburst: 99999426, rt_priority:10
+[  397.150999] [Pid: 2364], CPUburst: 100000230, rt_priority:10
+[  397.250853] [Pid: 2365], CPUburst: 99854843, rt_priority:10
+[  397.350858] [Pid: 2366], CPUburst: 100000068, rt_priority:10
+[  397.394667] [Pid: 2364], CPUburst: 43772235, rt_priority:10
+[  397.450714] [Pid: 2364], CPUburst: 56037711, rt_priority:10
+[  397.550669] [Pid: 2365], CPUburst: 99958335, rt_priority:10
+[  397.650407] [Pid: 2366], CPUburst: 99738447, rt_priority:10
+[  397.750730] [Pid: 2364], CPUburst: 100321237, rt_priority:10
+[  397.850516] [Pid: 2365], CPUburst: 99786443, rt_priority:10
+[  397.950525] [Pid: 2366], CPUburst: 99997598, rt_priority:10
+[  398.050552] [Pid: 2364], CPUburst: 100025029, rt_priority:10
+[  398.150361] [Pid: 2365], CPUburst: 99821479, rt_priority:10
+[  398.250328] [Pid: 2366], CPUburst: 99967566, rt_priority:10
+[  398.350330] [Pid: 2364], CPUburst: 99998171, rt_priority:10
+[  398.450254] [Pid: 2365], CPUburst: 99928717, rt_priority:10
+[  398.550234] [Pid: 2366], CPUburst: 99979547, rt_priority:10
+[  398.650187] [Pid: 2364], CPUburst: 99950365, rt_priority:10
+[  398.750201] [Pid: 2365], CPUburst: 100017080, rt_priority:10
+[  398.850078] [Pid: 2366], CPUburst: 99869484, rt_priority:10
+[  398.949959] [Pid: 2364], CPUburst: 99889053, rt_priority:10
+[  399.049902] [Pid: 2365], CPUburst: 99942878, rt_priority:10
+[  399.149872] [Pid: 2366], CPUburst: 99969652, rt_priority:10
+[  399.249839] [Pid: 2364], CPUburst: 99963220, rt_priority:10
+[  399.349776] [Pid: 2365], CPUburst: 99936899, rt_priority:10
+[  399.449689] [Pid: 2366], CPUburst: 99917660, rt_priority:10
+[  399.549702] [Pid: 2364], CPUburst: 100011321, rt_priority:10
+[  399.649707] [Pid: 2365], CPUburst: 100005160, rt_priority:10
+[  399.749652] [Pid: 2366], CPUburst: 99944096, rt_priority:10
+[  399.849607] [Pid: 2364], CPUburst: 99955545, rt_priority:10
+[  399.949445] [Pid: 2365], CPUburst: 99839659, rt_priority:10
+[  400.049402] [Pid: 2366], CPUburst: 99956777, rt_priority:10
+[  400.149443] [Pid: 2364], CPUburst: 100033550, rt_priority:10
+[  400.249339] [Pid: 2365], CPUburst: 99903635, rt_priority:10
+[  400.349269] [Pid: 2366], CPUburst: 99927139, rt_priority:10
+[  400.449199] [Pid: 2364], CPUburst: 99933198, rt_priority:10
+[  400.549167] [Pid: 2365], CPUburst: 99965965, rt_priority:10
+[  400.649133] [Pid: 2366], CPUburst: 99966819, rt_priority:10
+[  400.749056] [Pid: 2364], CPUburst: 99922839, rt_priority:10
+[  400.849122] [Pid: 2365], CPUburst: 100066497, rt_priority:10
+[  400.949040] [Pid: 2366], CPUburst: 99916024, rt_priority:10
+[  401.049023] [Pid: 2364], CPUburst: 99985652, rt_priority:10
+[  401.148813] [Pid: 2365], CPUburst: 99789343, rt_priority:10
+[  401.249050] [Pid: 2366], CPUburst: 100234691, rt_priority:10
+[  401.348768] [Pid: 2364], CPUburst: 99720429, rt_priority:10
+[  401.392981] [Pid: 2365], CPUburst: 44156022, rt_priority:10
+[  401.448791] [Pid: 2365], CPUburst: 55799558, rt_priority:10
+[  401.548631] [Pid: 2366], CPUburst: 99839483, rt_priority:10
+[  401.648785] [Pid: 2364], CPUburst: 100154109, rt_priority:10
+[  401.748552] [Pid: 2365], CPUburst: 99767811, rt_priority:10
+[  401.848572] [Pid: 2366], CPUburst: 100019245, rt_priority:10
+[  401.948496] [Pid: 2364], CPUburst: 99923772, rt_priority:10
+[  402.048396] [Pid: 2365], CPUburst: 99900575, rt_priority:10
+[  402.149216] [Pid: 2366], CPUburst: 100819679, rt_priority:10
+[  402.248434] [Pid: 2364], CPUburst: 99217499, rt_priority:10
+[  402.348250] [Pid: 2365], CPUburst: 99815977, rt_priority:10
+[  402.448270] [Pid: 2366], CPUburst: 100019182, rt_priority:10
+[  402.548168] [Pid: 2364], CPUburst: 99899063, rt_priority:10
+[  402.648134] [Pid: 2365], CPUburst: 99966790, rt_priority:10
+[  402.748261] [Pid: 2366], CPUburst: 100123365, rt_priority:10
+[  402.848031] [Pid: 2364], CPUburst: 99773580, rt_priority:10
+[  402.948056] [Pid: 2365], CPUburst: 100022363, rt_priority:10
+[  403.047996] [Pid: 2366], CPUburst: 99942318, rt_priority:10
+[  403.147962] [Pid: 2364], CPUburst: 99959529, rt_priority:10
+[  403.247899] [Pid: 2365], CPUburst: 99943889, rt_priority:10
+[  403.347862] [Pid: 2366], CPUburst: 99962733, rt_priority:10
+[  403.447770] [Pid: 2364], CPUburst: 99908352, rt_priority:10
+[  403.547463] [Pid: 2365], CPUburst: 99691375, rt_priority:10
+[  403.647612] [Pid: 2366], CPUburst: 100144057, rt_priority:10
+[  403.747596] [Pid: 2364], CPUburst: 99989577, rt_priority:10
+[  403.847561] [Pid: 2365], CPUburst: 99964249, rt_priority:10
+[  403.947857] [Pid: 2366], CPUburst: 100296855, rt_priority:10
+[  404.047567] [Pid: 2364], CPUburst: 99699004, rt_priority:10
+[  404.147978] [Pid: 2365], CPUburst: 100420271, rt_priority:10
+[  404.247394] [Pid: 2366], CPUburst: 99417021, rt_priority:10
+[  404.347277] [Pid: 2364], CPUburst: 99883589, rt_priority:10
+[  404.447231] [Pid: 2365], CPUburst: 99954301, rt_priority:10
+[  404.547185] [Pid: 2366], CPUburst: 99953216, rt_priority:10
+[  404.647071] [Pid: 2364], CPUburst: 99885476, rt_priority:10
+[  404.747247] [Pid: 2365], CPUburst: 100177353, rt_priority:10
+[  404.847085] [Pid: 2366], CPUburst: 99838291, rt_priority:10
+[  404.946776] [Pid: 2364], CPUburst: 99690634, rt_priority:10
+[  405.046999] [Pid: 2365], CPUburst: 100222320, rt_priority:10
+[  405.146861] [Pid: 2366], CPUburst: 99863405, rt_priority:10
+[  405.247209] [Pid: 2364], CPUburst: 100347512, rt_priority:10
+[  405.346801] [Pid: 2365], CPUburst: 99592375, rt_priority:10
+[  405.390879] [Pid: 2366], CPUburst: 44045459, rt_priority:10
+[  405.446758] [Pid: 2366], CPUburst: 55870669, rt_priority:10
+[  405.546718] [Pid: 2364], CPUburst: 99959645, rt_priority:10
+[  405.646572] [Pid: 2365], CPUburst: 99852787, rt_priority:10
+[  405.746561] [Pid: 2366], CPUburst: 99991045, rt_priority:10
+[  405.846501] [Pid: 2364], CPUburst: 99939382, rt_priority:10
+[  405.946683] [Pid: 2365], CPUburst: 100181716, rt_priority:10
+[  406.046430] [Pid: 2366], CPUburst: 99747542, rt_priority:10
+[  406.146371] [Pid: 2364], CPUburst: 99940725, rt_priority:10
+[  406.246327] [Pid: 2365], CPUburst: 99954187, rt_priority:10
+[  406.346431] [Pid: 2366], CPUburst: 100097540, rt_priority:10
+[  406.446259] [Pid: 2364], CPUburst: 99837246, rt_priority:10
+[  406.546196] [Pid: 2365], CPUburst: 99936245, rt_priority:10
+[  406.646150] [Pid: 2366], CPUburst: 99954209, rt_priority:10
+[  406.749949] [Pid: 2364], CPUburst: 103792025, rt_priority:10
+[  406.850034] [Pid: 2365], CPUburst: 100091135, rt_priority:10
+[  406.950014] [Pid: 2366], CPUburst: 99978729, rt_priority:10
+[  407.049966] [Pid: 2364], CPUburst: 99954458, rt_priority:10
+[  407.149996] [Pid: 2365], CPUburst: 100022720, rt_priority:10
+[  407.249884] [Pid: 2366], CPUburst: 99886190, rt_priority:10
+[  407.349772] [Pid: 2364], CPUburst: 99891533, rt_priority:10
+[  407.449607] [Pid: 2365], CPUburst: 99839032, rt_priority:10
+[  407.549710] [Pid: 2366], CPUburst: 100102289, rt_priority:10
+[  407.649612] [Pid: 2364], CPUburst: 99903399, rt_priority:10
+[  407.749547] [Pid: 2365], CPUburst: 99935241, rt_priority:10
+[  407.849539] [Pid: 2366], CPUburst: 99990119, rt_priority:10
+[  407.949496] [Pid: 2364], CPUburst: 99958936, rt_priority:10
+[  408.050107] [Pid: 2365], CPUburst: 100609628, rt_priority:10
+[  408.149358] [Pid: 2366], CPUburst: 99252948, rt_priority:10
+[  408.249314] [Pid: 2364], CPUburst: 99955636, rt_priority:10
+[  408.349140] [Pid: 2365], CPUburst: 99825917, rt_priority:10
+[  408.449308] [Pid: 2366], CPUburst: 100167021, rt_priority:10
+[  408.549196] [Pid: 2364], CPUburst: 99888495, rt_priority:10
+[  408.649124] [Pid: 2365], CPUburst: 99928507, rt_priority:10
+[  408.749051] [Pid: 2366], CPUburst: 99925656, rt_priority:10
+[  408.849052] [Pid: 2364], CPUburst: 100000151, rt_priority:10
+[  408.949045] [Pid: 2365], CPUburst: 99916270, rt_priority:10
+[  409.048757] [Pid: 2366], CPUburst: 99790374, rt_priority:10
+[  409.148860] [Pid: 2364], CPUburst: 100102856, rt_priority:10
+[  409.248814] [Pid: 2365], CPUburst: 99952890, rt_priority:10
+[  409.348737] [Pid: 2366], CPUburst: 99917281, rt_priority:10
+[  409.388807] [Pid: 2364], CPUburst: 40055350, rt_priority:10
+[  409.448895] [Pid: 2364], CPUburst: 60071042, rt_priority:10
+[  409.548806] [Pid: 2365], CPUburst: 99912704, rt_priority:10
+[  409.648588] [Pid: 2366], CPUburst: 99789333, rt_priority:10
+[  409.748484] [Pid: 2364], CPUburst: 99897467, rt_priority:10
+[  409.848568] [Pid: 2365], CPUburst: 100084635, rt_priority:10
+[  409.948884] [Pid: 2366], CPUburst: 100312106, rt_priority:10
+[  410.048453] [Pid: 2364], CPUburst: 99572084, rt_priority:10
+[  410.148491] [Pid: 2365], CPUburst: 99959978, rt_priority:10
+[  410.248479] [Pid: 2366], CPUburst: 100064971, rt_priority:10
+[  410.348274] [Pid: 2364], CPUburst: 99795653, rt_priority:10
+[  410.448229] [Pid: 2365], CPUburst: 99954982, rt_priority:10
+[  410.548294] [Pid: 2366], CPUburst: 100062657, rt_priority:10
+[  410.648181] [Pid: 2364], CPUburst: 99889022, rt_priority:10
+[  410.748092] [Pid: 2365], CPUburst: 99910550, rt_priority:10
+[  410.848035] [Pid: 2366], CPUburst: 99943267, rt_priority:10
+[  410.947988] [Pid: 2364], CPUburst: 99953209, rt_priority:10
+[  411.048044] [Pid: 2365], CPUburst: 100055917, rt_priority:10
+[  411.148073] [Pid: 2366], CPUburst: 100025399, rt_priority:10
+[  411.247974] [Pid: 2364], CPUburst: 99903184, rt_priority:10
+[  411.347731] [Pid: 2365], CPUburst: 99755185, rt_priority:10
+[  411.447782] [Pid: 2366], CPUburst: 100054922, rt_priority:10
+[  411.548147] [Pid: 2364], CPUburst: 100365045, rt_priority:10
+[  411.647724] [Pid: 2365], CPUburst: 99576558, rt_priority:10
+[  411.747737] [Pid: 2366], CPUburst: 100013136, rt_priority:10
+[  411.847499] [Pid: 2364], CPUburst: 99763397, rt_priority:10
+[  411.947476] [Pid: 2365], CPUburst: 99974723, rt_priority:10
+[  412.047629] [Pid: 2366], CPUburst: 100155081, rt_priority:10
+[  412.147355] [Pid: 2364], CPUburst: 99725702, rt_priority:10
+[  412.247336] [Pid: 2365], CPUburst: 99981076, rt_priority:10
+[  412.347286] [Pid: 2366], CPUburst: 99948638, rt_priority:10
+[  412.447231] [Pid: 2364], CPUburst: 99945229, rt_priority:10
+[  412.547180] [Pid: 2365], CPUburst: 99949399, rt_priority:10
+[  412.647130] [Pid: 2366], CPUburst: 99949404, rt_priority:10
+[  412.747073] [Pid: 2364], CPUburst: 99941150, rt_priority:10
+[  412.847228] [Pid: 2365], CPUburst: 100156906, rt_priority:10
+[  412.946982] [Pid: 2366], CPUburst: 99754668, rt_priority:10
+[  413.046987] [Pid: 2364], CPUburst: 100005683, rt_priority:10
+[  413.146958] [Pid: 2365], CPUburst: 99969836, rt_priority:10
+[  413.246797] [Pid: 2366], CPUburst: 99840027, rt_priority:10
+[  413.346613] [Pid: 2364], CPUburst: 99815295, rt_priority:10
+[  413.386756] [Pid: 2365], CPUburst: 40093201, rt_priority:10
+[  413.446720] [Pid: 2365], CPUburst: 59955945, rt_priority:10
+[  413.546649] [Pid: 2366], CPUburst: 99929242, rt_priority:10
+[  413.646684] [Pid: 2364], CPUburst: 100034078, rt_priority:10
+[  413.746720] [Pid: 2365], CPUburst: 100035667, rt_priority:10
+[  413.756538] [Pid: 2366], CPUburst: 9820008, rt_priority:10
+[  413.854665] [Pid: 2364], CPUburst: 98123448, rt_priority:10
+[  413.954334] [Pid: 2365], CPUburst: 99671704, rt_priority:10
+[  413.954350] [Pid: 2363], CPUburst: 18383, rt_priority:10
+[  414.054242] [Pid: 2364], CPUburst: 99890235, rt_priority:10
+[  414.154370] [Pid: 2365], CPUburst: 100127306, rt_priority:10
+[  414.254311] [Pid: 2364], CPUburst: 99941175, rt_priority:10
+[  414.354344] [Pid: 2365], CPUburst: 100031941, rt_priority:10
+[  414.454216] [Pid: 2364], CPUburst: 99872323, rt_priority:10
+[  414.554283] [Pid: 2365], CPUburst: 100067797, rt_priority:10
+[  414.654116] [Pid: 2364], CPUburst: 99832819, rt_priority:10
+[  414.754131] [Pid: 2365], CPUburst: 100014531, rt_priority:10
+[  414.854178] [Pid: 2364], CPUburst: 100047083, rt_priority:10
+[  414.953960] [Pid: 2365], CPUburst: 99782569, rt_priority:10
+[  415.065886] [Pid: 2364], CPUburst: 111924421, rt_priority:10
+[  415.165912] [Pid: 2365], CPUburst: 100027526, rt_priority:10
+[  415.265829] [Pid: 2364], CPUburst: 99917351, rt_priority:10
+[  415.365600] [Pid: 2365], CPUburst: 99770802, rt_priority:10
+[  415.465815] [Pid: 2364], CPUburst: 100212940, rt_priority:10
+[  415.565984] [Pid: 2365], CPUburst: 100169512, rt_priority:10
+[  415.665603] [Pid: 2364], CPUburst: 99620957, rt_priority:10
+[  415.765582] [Pid: 2365], CPUburst: 99978029, rt_priority:10
+[  415.869568] [Pid: 2364], CPUburst: 103985040, rt_priority:10
+[  415.969788] [Pid: 2365], CPUburst: 100220288, rt_priority:10
+[  416.069334] [Pid: 2364], CPUburst: 99543071, rt_priority:10
+[  416.169359] [Pid: 2365], CPUburst: 100029228, rt_priority:10
+[  416.269381] [Pid: 2364], CPUburst: 100022617, rt_priority:10
+[  416.369175] [Pid: 2365], CPUburst: 99791810, rt_priority:10
+[  416.376481] [Pid: 2364], CPUburst: 7307680, rt_priority:10
+[  416.473204] [Pid: 2365], CPUburst: 96720640, rt_priority:10
+[  416.473221] [Pid: 2363], CPUburst: 20791, rt_priority:10
+[  416.861092] [Pid: 2365], CPUburst: 387865627, rt_priority:10
+[  416.861276] [Pid: 2363], CPUburst: 187962, rt_priority:10
